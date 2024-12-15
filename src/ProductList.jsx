@@ -268,7 +268,14 @@ const handlePlantsClick = (e) => {
         </div>
         {!showCart? (
         <div className="product-grid">
-
+            {plantsArray.map((plantsArray, index) => (
+        <div key={index} className="plant-card">
+          <h2>{plantsArray.name}</h2>
+          <img src={plantsArray.image} alt={plantsArray.name} />
+          <p>{plantsArray.description}</p>
+          <p>Cost: ${plantsArray.cost}</p>
+        </div>
+      ))}
 
         </div>
  ) :  (
