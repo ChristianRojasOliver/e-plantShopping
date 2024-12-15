@@ -274,6 +274,7 @@ const handlePlantsClick = (e) => {
           <img src={plantsArray.image} alt={plantsArray.name} />
           <p>{plantsArray.description}</p>
           <p>Cost: ${plantsArray.cost}</p>
+          <button>Add to Cart</button>
         </div>
       ))}
 
